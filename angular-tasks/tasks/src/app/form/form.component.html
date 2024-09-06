@@ -1,0 +1,29 @@
+<div class="form-container">
+    <form [formGroup]="myForm">
+
+      <div class="form-group">
+        <label for="hsn">HSN Code:</label>
+        <input id="hsn" formControlName="hsn" type="Number" />
+      </div>
+
+      <div class="form-group">
+        <label for="from">From:</label>
+        <input id="from" formControlName="from" type="text" />
+        
+      </div>
+  
+      <div class="form-group">
+        <label for="to">To:</label>
+        <input id="to" formControlName="to" type="text" />
+      </div>
+  
+      <div class="button-group">
+        <button type="button" (click)="onImport()">Import</button>
+        <button type="button" (click)="onExport()">Export</button>
+      </div>
+    </form>
+  </div>
+  
+
+
+  <!-- In Angular, reactive forms are structured around FormGroup and FormControl classes. These classes manage form state, validation, and interactions in a structured way This directive is used in the template to link an input element to a specific FormControl instance defined in the FormGroup -->
